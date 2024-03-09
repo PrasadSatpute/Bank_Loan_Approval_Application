@@ -7,8 +7,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Response {
-    private Data data;
-    private String httpStatus;
-    private String message;
+public class Data {
+    private Customer customer;
 }
