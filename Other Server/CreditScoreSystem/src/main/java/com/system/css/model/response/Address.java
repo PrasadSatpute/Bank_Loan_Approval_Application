@@ -1,14 +1,22 @@
 package com.system.css.model.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 
-@Getter
-@Setter
+//@Getter
+//@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+//@ToString
+@Data
+@Entity
+@Table(name = "address")
 public class Address {
+
+    @Id
     @JsonProperty("street")
     private String street;
 
